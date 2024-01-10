@@ -1,0 +1,147 @@
+[debug] [2024-01-10T22:27:29.602Z] ----------------------------------------------------------------------
+[debug] [2024-01-10T22:27:29.605Z] Command:       /nix/store/4bgg8j8275adawqbc5rkm4fv48dgg2i3-nodejs-18.18.2/bin/node /nix/store/787v83pj30vn1q99i2qf4hy4vd0xkwd5-firebase-tools-12.4.8/lib/node_modules/firebase-tools/lib/bin/firebase.js emulators:start
+[debug] [2024-01-10T22:27:29.606Z] CLI Version:   12.4.8
+[debug] [2024-01-10T22:27:29.606Z] Platform:      linux
+[debug] [2024-01-10T22:27:29.606Z] Node Version:  v18.18.2
+[debug] [2024-01-10T22:27:29.607Z] Time:          Wed Jan 10 2024 17:27:29 GMT-0500 (Eastern Standard Time)
+[debug] [2024-01-10T22:27:29.607Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-10T22:27:29.696Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-10T22:27:29.696Z] > authorizing via signed-in user (terdimitri@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2024-01-10T22:27:29.707Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-01-10T22:27:29.707Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-01-10T22:27:29.708Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-01-10T22:27:29.716Z] [hub] writing locator at /run/user/1000/hub-budgeter-352b6.json
+[debug] [2024-01-10T22:27:29.747Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-01-10T22:27:29.748Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-01-10T22:27:29.748Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[debug] [2024-01-10T22:27:29.769Z] defaultcredentials: writing to file /home/terdi/.config/firebase/terdimitri_gmail_com_application_default_credentials.json
+[debug] [2024-01-10T22:27:29.779Z] Setting GAC to /home/terdi/.config/firebase/terdimitri_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /home/terdi/.config/firebase/terdimitri_gmail_com_application_default_credentials.json"}}
+[debug] [2024-01-10T22:27:29.782Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/budgeter-352b6/adminSdkConfig [none]
+[debug] [2024-01-10T22:27:30.189Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/budgeter-352b6/adminSdkConfig 200
+[debug] [2024-01-10T22:27:30.189Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/budgeter-352b6/adminSdkConfig {"projectId":"budgeter-352b6","storageBucket":"budgeter-352b6.appspot.com"}
+[debug] [2024-01-10T22:27:30.226Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/budgeter-352b6/sites 
+[debug] [2024-01-10T22:27:30.864Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/budgeter-352b6/sites 200
+[debug] [2024-01-10T22:27:30.865Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/budgeter-352b6/sites {"sites":[{"name":"projects/budgeter-352b6/sites/budgeter-352b6","defaultUrl":"https://budgeter-352b6.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-01-10T22:27:30.865Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/budgeter-352b6/webApps/-/config [none]
+[debug] [2024-01-10T22:27:31.299Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/budgeter-352b6/webApps/-/config 200
+[debug] [2024-01-10T22:27:31.299Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/budgeter-352b6/webApps/-/config {"projectId":"budgeter-352b6","storageBucket":"budgeter-352b6.appspot.com","apiKey":"AIzaSyCzgMWgzA0mJaSGSoUuYpTNzza_bB8y6zc","authDomain":"budgeter-352b6.firebaseapp.com","messagingSenderId":"331933463949"}
+[debug] [2024-01-10T22:27:31.310Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/budgeter-352b6 [none]
+[debug] [2024-01-10T22:27:31.538Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/budgeter-352b6 200
+[debug] [2024-01-10T22:27:31.539Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/budgeter-352b6 {"projectId":"budgeter-352b6","projectNumber":"331933463949","displayName":"budgeter","name":"projects/budgeter-352b6","resources":{"hostingSite":"budgeter-352b6"},"state":"ACTIVE","etag":"1_555f236d-0cfa-4c6a-ac24-3d27f61735e8"}
+[info] i  hosting[budgeter-352b6]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting[budgeter-352b6]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[debug] [2024-01-10T22:27:31.594Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-01-10T22:27:31.594Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-01-10T22:27:31.595Z] Starting Emulator UI with command {"binary":"node","args":["/home/terdi/.cache/firebase/emulators/ui-v1.11.7/server/server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/home/terdi/.cache/firebase/emulators/ui-v1.11.7/server/server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2024-01-10T22:27:31.755Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2024-01-10T22:27:31.755Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "/home/terdi/prg/Budgeter/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/home/terdi/prg/Budgeter/functions\" for Cloud Functions..."}}
+[debug] [2024-01-10T22:27:31.898Z] Validating nodejs source
+[debug] [2024-01-10T22:27:32.627Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-01-10T22:27:32.627Z] Building nodejs source
+[debug] [2024-01-10T22:27:32.628Z] Failed to find version of module node: reached end of search path /home/terdi/prg/Budgeter/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[debug] [2024-01-10T22:27:32.630Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-01-10T22:27:32.636Z] Found firebase-functions binary at '/home/terdi/prg/Budgeter/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8622
+
+[debug] [2024-01-10T22:27:32.985Z] Got response from /__/functions.yaml {"endpoints":{"app":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[info] ✔  functions[us-central1-app]: http function initialized (http://127.0.0.1:5001/budgeter-352b6/us-central1/app). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/budgeter-352b6/us-central1/app)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Hosting   │ 127.0.0.1:5000 │ n/a                             │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2024-01-10T22:27:39.321Z] [work-queue] {"queuedWork":["/budgeter-352b6/us-central1/app-2024-01-10T22:27:39.320Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-10T22:27:39.321Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/budgeter-352b6/us-central1/app-2024-01-10T22:27:39.320Z"],"workRunningCount":1}
+[debug] [2024-01-10T22:27:39.322Z] Accepted request GET /budgeter-352b6/us-central1/app --> us-central1-app
+[debug] [2024-01-10T22:27:39.323Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-01-10T22:27:39.328Z] [functions] Got req.url=/budgeter-352b6/us-central1/app, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/budgeter-352b6/us-central1/app, mapping to path=/"}}
+[debug] [2024-01-10T22:27:39.355Z] [worker-pool] addWorker(us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-app)"}}
+[debug] [2024-01-10T22:27:39.357Z] [worker-pool] Adding worker with key us-central1-app, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-app, total=1"}}
+[debug] [2024-01-10T22:27:40.474Z] [runtime-status] [80399] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"/home/terdi/prg/Budgeter/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [80399] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"/home/terdi/prg/Budgeter/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2024-01-10T22:27:40.476Z] [runtime-status] [80399] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.6.0","resolution":"/home/terdi/prg/Budgeter/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [80399] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.6.0\",\"resolution\":\"/home/terdi/prg/Budgeter/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-01-10T22:27:40.476Z] [runtime-status] [80399] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [80399] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2024-01-10T22:27:40.477Z] [runtime-status] [80399] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.6.0","resolution":"/home/terdi/prg/Budgeter/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [80399] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.6.0\",\"resolution\":\"/home/terdi/prg/Budgeter/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-01-10T22:27:40.670Z] [runtime-status] [80399] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [80399] Checked functions.config() {\"config\":{}}"}}
+[debug] [2024-01-10T22:27:40.670Z] [runtime-status] [80399] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.6.0","resolution":"/home/terdi/prg/Budgeter/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [80399] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.6.0\",\"resolution\":\"/home/terdi/prg/Budgeter/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2024-01-10T22:27:40.671Z] [runtime-status] [80399] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.6.0","resolution":"/home/terdi/prg/Budgeter/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [80399] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.6.0\",\"resolution\":\"/home/terdi/prg/Budgeter/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-01-10T22:27:40.673Z] [runtime-status] [80399] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"/home/terdi/prg/Budgeter/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [80399] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"/home/terdi/prg/Budgeter/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2024-01-10T22:27:40.676Z] [runtime-status] [80399] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.6.0","resolution":"/home/terdi/prg/Budgeter/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [80399] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.6.0\",\"resolution\":\"/home/terdi/prg/Budgeter/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-01-10T22:27:40.677Z] [runtime-status] [80399] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.1","resolution":"/home/terdi/prg/Budgeter/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [80399] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"/home/terdi/prg/Budgeter/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2024-01-10T22:27:40.769Z] [runtime-status] [80399] Functions runtime initialized. {"cwd":"/home/terdi/prg/Budgeter/functions","node_version":"18.18.2"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [80399] Functions runtime initialized. {\"cwd\":\"/home/terdi/prg/Budgeter/functions\",\"node_version\":\"18.18.2\"}"}}
+[debug] [2024-01-10T22:27:40.769Z] [runtime-status] [80399] Listening to port: /run/user/1000/fire_emu_fedd7d97ae955d91.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [80399] Listening to port: /run/user/1000/fire_emu_fedd7d97ae955d91.sock"}}
+[debug] [2024-01-10T22:27:40.785Z] [worker-us-central1-app-4b0c99a1-1c41-4cb6-95f3-03a64dd66194]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-4b0c99a1-1c41-4cb6-95f3-03a64dd66194]: IDLE"}}
+[debug] [2024-01-10T22:27:40.786Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2024-01-10T22:27:40.786Z] [worker-us-central1-app-4b0c99a1-1c41-4cb6-95f3-03a64dd66194]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-4b0c99a1-1c41-4cb6-95f3-03a64dd66194]: BUSY"}}
+[info] >  {"severity":"INFO","message":"hi"} {"user":{"severity":"INFO","message":"hi"},"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m {\"severity\":\"INFO\",\"message\":\"hi\"}"}}
+[debug] [2024-01-10T22:27:40.798Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 12.130731ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 12.130731ms"}}
+[debug] [2024-01-10T22:27:40.799Z] [worker-us-central1-app-4b0c99a1-1c41-4cb6-95f3-03a64dd66194]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-4b0c99a1-1c41-4cb6-95f3-03a64dd66194]: IDLE"}}
+[debug] [2024-01-10T22:27:40.799Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-01-10T22:27:40.800Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-01-10T22:27:40.800Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[info] i  hosting: 127.0.0.1 - - [10/Jan/2024:22:27:53 +0000] "GET / HTTP/1.1" 404 - "-" "Mozilla/5.0 (X11; Linux x86_64; rv:98.0) Gecko/20100101 Firefox/98.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [10/Jan/2024:22:27:53 +0000] \"GET / HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:98.0) Gecko/20100101 Firefox/98.0\""}}
+[info] i  hosting: 127.0.0.1 - - [10/Jan/2024:22:27:53 +0000] "GET /favicon.ico HTTP/1.1" - - "http://127.0.0.1:5000/" "Mozilla/5.0 (X11; Linux x86_64; rv:98.0) Gecko/20100101 Firefox/98.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [10/Jan/2024:22:27:53 +0000] \"GET /favicon.ico HTTP/1.1\" - - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (X11; Linux x86_64; rv:98.0) Gecko/20100101 Firefox/98.0\""}}
+[info] [hosting] Rewriting /test to http://127.0.0.1:5001/budgeter-352b6/us-central1/app for local Function us-central1/app
+[debug] [2024-01-10T22:28:00.143Z] >>> [apiv2][query] GET http://127.0.0.1:5001/budgeter-352b6/us-central1/app/test 
+[debug] [2024-01-10T22:28:00.150Z] [work-queue] {"queuedWork":["/budgeter-352b6/us-central1/app/test-2024-01-10T22:28:00.149Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-10T22:28:00.150Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/budgeter-352b6/us-central1/app/test-2024-01-10T22:28:00.149Z"],"workRunningCount":1}
+[debug] [2024-01-10T22:28:00.150Z] Accepted request GET /budgeter-352b6/us-central1/app/test --> us-central1-app
+[debug] [2024-01-10T22:28:00.151Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-01-10T22:28:00.152Z] [functions] Got req.url=/budgeter-352b6/us-central1/app/test, mapping to path=/test {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/budgeter-352b6/us-central1/app/test, mapping to path=/test"}}
+[debug] [2024-01-10T22:28:00.152Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2024-01-10T22:28:00.154Z] [worker-us-central1-app-4b0c99a1-1c41-4cb6-95f3-03a64dd66194]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-4b0c99a1-1c41-4cb6-95f3-03a64dd66194]: BUSY"}}
+[debug] [2024-01-10T22:28:00.174Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 20.758685ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 20.758685ms"}}
+[debug] [2024-01-10T22:28:00.176Z] [worker-us-central1-app-4b0c99a1-1c41-4cb6-95f3-03a64dd66194]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-4b0c99a1-1c41-4cb6-95f3-03a64dd66194]: IDLE"}}
+[debug] [2024-01-10T22:28:00.176Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-01-10T22:28:00.178Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-01-10T22:28:00.179Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-10T22:28:00.181Z] <<< [apiv2][status] GET http://127.0.0.1:5001/budgeter-352b6/us-central1/app/test 404
+[debug] [2024-01-10T22:28:00.181Z] <<< [apiv2][body] GET http://127.0.0.1:5001/budgeter-352b6/us-central1/app/test [stream]
+[info] i  hosting: 127.0.0.1 - - [10/Jan/2024:22:28:00 +0000] "GET /test HTTP/1.1" 404 143 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:98.0) Gecko/20100101 Firefox/98.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [10/Jan/2024:22:28:00 +0000] \"GET /test HTTP/1.1\" 404 143 \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:98.0) Gecko/20100101 Firefox/98.0\""}}
