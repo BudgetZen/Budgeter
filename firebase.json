@@ -19,7 +19,8 @@
       "**/node_modules/**"
     ],
     "rewrites": [ {
-        "source": "/test",
+        "source": "**",
+        "dynamicLinks": true,
         "function": { "functionId": "app", "region": "us-central1", "pinTag":true }
       } ]
   }
